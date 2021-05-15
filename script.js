@@ -155,4 +155,4 @@ event.preventDefault();
     console.log($(this).text());
     searchCity($(this).text());
 
-});
+}); 
