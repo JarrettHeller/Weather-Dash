@@ -7,3 +7,5 @@ it saves your most recent search.
 
 
 To install on your local device, download the repo, and open the index.html file
+
+Link to Deployed App: https://jarrettheller.github.io/Weather-Dash/
