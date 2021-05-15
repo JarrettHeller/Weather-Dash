@@ -17,7 +17,6 @@ function searchCity(cityname) {
         $("#current").empty();
        var mainDate = moment().format('L');
  
-
         //HTML City info
         var cityNameEl = $("<h2>").text(response.name);
         var displayMainDate = cityNameEl.append(" " + mainDate);
@@ -26,6 +25,7 @@ function searchCity(cityname) {
         var windEl = $("<p>").text("Wind Speed: " + response.wind.speed);
         var currentweather = response.weather[0].main;
 
+        //Weather Info
         if (currentweather === "Rain") {
             var currentIcon = $('<img>').attr("src", "http://openweathermap.org/img/wn/09d.png");
             currentIcon.attr("style", "height: 60px; width: 60px");
@@ -122,8 +122,6 @@ var queryURLUV = "https://api.openweathermap.org/data/2.5/uvi?&appid=ecc0be5fd92
         }
 
     });
-
-
 
 }
 pageLoad();
